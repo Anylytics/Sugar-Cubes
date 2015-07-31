@@ -1,0 +1,87 @@
+/*
+  Sugar-Cube Style Guide
+  By: Nabil Enayet 7/31/2015
+  http://anylytics.io/sugar-cube
+*/
+
+body {  
+  background: -webkit-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(45deg, #eeeeee 30%, #effcff 70%); /* FF3.6+ */
+  background:     -ms-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* IE10 */
+  background:      -o-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* Opera 11.10+ */
+  background:         linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* W3C */       
+}
+
+.sugar-cube {
+  display:inline-block;
+  position:absolute;
+  content: url('../img/sugar_cube.svg');
+}
+
+.hover-tilt{
+    transition: transform 0.4s;
+}
+
+.hover-tilt:hover {
+  transform: translate(20px) rotate(5deg);
+  transition: transform .4s;
+}
+
+.sugar-cube.logo {
+  margin: 35px;
+  width: 100px;
+}
+
+.sugar-cube.animated {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.logo-container div {
+  display:inline-block;
+}
+
+#sugar-cube-1 {
+  z-index:1;
+}
+#sugar-cube-2 {
+  z-index:2;
+}
+#sugar-cube-3 {
+  z-index:3;
+}
+#sugar-cube-4 {
+  z-index:4;
+}
+
+.input-title {
+  position:absolute;
+  width:600px;
+  text-align:center;
+  margin:auto;
+  left:0;
+  right:0;
+  top:600px;
+}
+
+#sugar-container {
+  width:100px; 
+  position:absolute;
+  margin:auto;
+  left: 0;
+  right: 0;
+  top: -260px;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.sugar-input {
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  font-size: 1.1em;
+}

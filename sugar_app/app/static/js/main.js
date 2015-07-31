@@ -11,4 +11,4 @@ require.config({
 });
 
 
-require(["template"]);
+require(["sugar"]);
