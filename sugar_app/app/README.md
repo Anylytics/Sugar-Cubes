@@ -1,2 +1,0 @@
-# Template
-Anylytics Template Repository

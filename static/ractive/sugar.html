@@ -1,0 +1,492 @@
+
+<div id="sugar-container">
+  <div class="sugar-cube hover-tilt" id="sugar-cube-template"></div>
+</div>
+  <div class="progress" id="loader">
+      <div class="indeterminate"></div>
+  </div>
+
+<div class="row">
+	<div class="col s12 m4">
+		<div class="card blue-grey darken-1 showOverflow">
+			<div class="input-title card-content white-text">
+				<span class="card-title">
+				How much sugar is in 
+				</span>
+				<div class="row hideThis">
+					<div class="input-field col s6">
+						<input id="delay" type="text" value="100">
+						<label for="delay" class="active">Base delay</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="delayOff" type="text" value="40">
+						<label for="delayOff" class="active">Offset By</label>
+					</div>
+				</div>
+				<div class="row hideThis">
+					<div class="input-field col s6">
+						<input id="speed" type="text" value="950">
+						<label for="speed" class="active">Base speed</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="speedOff" type="text" value="100">
+						<label for="speedOff" class="active">Offset By</label>
+					</div>
+				</div>
+        <div class="row hideThis">
+          <div class="input-field col s12">
+            <input id="numCubes" type="text">
+            <label for="numCubes">Grams of Sugar</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="foodID" type="text">
+            <label for="foodID" class="active">Type a food!</label>
+          </div>
+        </div>
+        <a class="btn-floating cardBtn btn-large waves-effect waves-light red hideThis" onclick="dropCubes()"><i class="material-icons">add</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light blue hideThis" onclick="apiTEST()"><i class="material-icons">new_releases</i></a>
+				<!--<button  class="waves-effect waves-light btn blue-grey" onclick="dropCubes()"><i class="material-icons">add</i></button>-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<svg
+   width="221.59485"
+   height="218.43719"
+   id="scale">
+  <defs
+     id="defs5319" />
+  <g
+     transform="matrix(1.8983051,0,0,1.8983051,-601.06699,-901.36726)"
+     id="layer1">
+    <g
+       transform="translate(-1540.8665,-360.45881)"
+       id="g4931">
+      <g
+         transform="matrix(0.57503927,0,0,0.57503927,789.51437,403.86389)"
+         id="g4668"
+         style="fill:#389163;fill-opacity:1">
+        <rect
+           width="36.946331"
+           height="20.152544"
+           rx="4.641243"
+           ry="4.641243"
+           x="1872.0305"
+           y="930.20325"
+           id="rect4664"
+           style="fill:#389163;fill-opacity:1;stroke:none" />
+        <rect
+           width="36.946331"
+           height="20.152544"
+           rx="4.641243"
+           ry="4.641243"
+           x="2008.5021"
+           y="930.20325"
+           id="rect4666"
+           style="fill:#389163;fill-opacity:1;stroke:none" />
+      </g>
+      <rect
+         width="22.971483"
+         height="14.495689"
+         x="1904.3807"
+         y="846.24054"
+         id="rect4720"
+         style="fill:#484848;fill-opacity:1;stroke:#484848;stroke-width:1.20833409;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         d="m 1857.5,858.06566 0,83.09318 c 0,2.54857 2.0517,4.60031 4.6003,4.60031 l 107.5324,0 c 2.5485,0 4.6003,-2.05174 4.6003,-4.60031 l 0,-83.09318 z"
+         id="rect4659"
+         style="fill:#72c99c;fill-opacity:1;stroke:none" />
+      <rect
+         width="57.75"
+         height="77.75"
+         rx="7"
+         ry="7"
+         x="1886.9915"
+         y="862.36218"
+         id="rect4672"
+         style="fill:#d6efe3;fill-opacity:1;stroke:none" />
+      <rect
+         width="9.5458279"
+         height="69.296463"
+         rx="0"
+         ry="0"
+         x="1922.2305"
+         y="866.58893"
+         id="rect4674"
+         style="fill:#143323;fill-opacity:1;stroke:none" />
+      <path
+         d="m 1919.9717,934.88539 -11.1369,0"
+         id="path4678"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         width="17.500893"
+         height="5.6568542"
+         rx="2.8284271"
+         ry="2.8284271"
+         x="1918.2529"
+         y="931.63458"
+         id="scale-bar"
+         style="fill:#769986;fill-opacity:1;stroke:none" />
+      <path
+         d="m 1919.9717,921.4261 -11.1369,0"
+         id="path4680"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 1919.9717,907.96681 -11.1369,0"
+         id="path4684"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 1919.9717,894.50752 -11.1369,0"
+         id="path4688"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 1919.9717,881.04822 -11.1369,0"
+         id="path4692"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 1919.9717,867.58893 -11.1369,0"
+         id="path4694"
+         style="fill:none;stroke:#484848;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         x="1896.1251"
+         y="937.29791"
+         id="text4696"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1896.1251"
+           y="937.29791"
+           id="tspan4698">0</tspan></text>
+      <text
+         x="1894.3962"
+         y="923.83862"
+         id="text4700"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-0.80000001px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1894.3962"
+           y="923.83862"
+           id="tspan4702">10</tspan></text>
+      <text
+         x="1894.5482"
+         y="910.37933"
+         id="text4704"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-0.80000001px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1894.5482"
+           y="910.37933"
+           id="tspan4706">20</tspan></text>
+      <text
+         x="1894.5786"
+         y="896.92004"
+         id="text4708"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-0.80000001px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1894.5786"
+           y="896.92004"
+           id="tspan4710">30</tspan></text>
+      <text
+         x="1894.59"
+         y="883.46075"
+         id="text4712"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-0.80000001px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1894.59"
+           y="883.46075"
+           id="tspan4714">40</tspan></text>
+      <text
+         x="1894.5748"
+         y="870.00146"
+         id="text4716"
+         xml:space="preserve"
+         style="font-size:7.59857321px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-0.80000001px;word-spacing:0px;fill:#484848;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"><tspan
+           x="1894.5748"
+           y="870.00146"
+           id="tspan4718">50</tspan></text>
+      <path
+         d="m 1857.5228,835.2862 0,4.78125 c 0,4.40704 3.5617,7.9375 7.9688,7.9375 l 100.75,0 c 4.407,0 7.9687,-3.53046 7.9687,-7.9375 l 0,-4.78125 -116.6875,0 z"
+         id="scale-top"
+         style="fill:#999999;fill-opacity:1;stroke:none" />
+    </g>
+  </g>
+</svg>
+
+<script>
+
+
+var cubeCounter = 1;
+var delay 		= $("#delay").val();
+var delayOffset = $("#delayOff").val();
+var speed 		= $("#speed").val();
+var speedOffset	= $("#speedOff").val();
+
+$("#foodID").autocomplete({
+  //serviceUrl: './nutrients_suggest/',
+  lookup: function (query, done) {
+      $("#loader").css('display','block');
+      // Do ajax call or lookup locally, when done,
+      // call the callback and pass your results:$("#loader").css('display','block');
+      $.ajax({
+            url: "./nutrients_suggest/"+query,
+            dataType: "json",
+            success: function(result) {
+              //console.log(json);
+              $("#loader").css('display','none');
+              done(result);
+            }
+        });
+
+  },
+  onSelect: function (suggestion) {
+      getSugar(suggestion.data.toString());//Materialize.toast(suggestion.value + " " + suggestion.data,2000);
+  }
+});
+
+function getSugar(food_id) {
+  $("#loader").css('display','block');
+  $.ajax( {
+      url: "./nutrients_sugarcontent/"+food_id,
+      dataType: "json",
+      success: function(result) {
+        $("#loader").css('display','none');
+        Materialize.toast("That has " + result + "g of sugar!", 2000);
+        dropCubes(result);
+      }
+  })
+}
+
+  function apiTEST() {
+    var foodID = $("#foodID").val();
+    var toastLen = 2000;
+    $("#loader").css('display','block');
+    $.ajax({
+          url: "./nutrients_suggest/"+foodID,
+          dataTye: "json",
+          success: function(json) {
+            //console.log(json);
+            $("#loader").css('display','none');
+            for (items in json.data) {
+              Materialize.toast(json.data[items], toastLen);
+              toastLen += 150;
+            }
+          }
+      });
+  }
+
+function cloneCube() {
+	$('#sugar-cube-template').clone().attr('id', 'sugar-cube-'+cubeCounter).css('z-index',cubeCounter).appendTo('#sugar-container');
+	var newCubeID = "#sugar-cube-"+cubeCounter;
+	cubeCounter++;
+
+	return newCubeID;
+}
+
+function destroyCubes() {
+	if (cubeCounter>1) {
+		for (var i = 1; i <= cubeCounter; i++) {
+			$("#sugar-cube-"+i).remove();
+		}
+		cubeCounter = 1;
+	}
+
+}
+
+function randomOffset() {
+  return 3-Math.floor((Math.random() * 10) + 1);
+}
+
+function randomAnimationTime() {
+	//return 800+Math.floor(Math.random() * 200);
+	return parseInt( $("#speed").val() , 10 ) +Math.floor(Math.random() * parseInt( $("#speedOff").val(), 10 ) ) ;
+}
+
+function randomDelayTime() {
+	//return 60+Math.floor(Math.random() * 300);
+	return parseInt( $("#delay").val() , 10 ) +Math.floor(Math.random() * parseInt( $("#delayOff").val(), 10 ) ) ;
+}
+
+function clearCube(cubeID) { 
+  $(cubeID).removeAttr('style'); 
+}
+
+function dropCubes(gramsSugar){
+
+	if (cubeCounter>1) {
+		for (var i = 1; i <= cubeCounter; i++) {
+			$("#sugar-cube-"+i).remove();
+		}
+		cubeCounter = 1;
+	}
+
+	var randomNum = Math.floor(parseInt( gramsSugar , 10 )/2.7);
+	console.log($("#numCubes").val() + "g of sugar is " + parseInt( gramsSugar , 10 )/2.7 + " sugar cubes")
+	var delayTime = 0;
+	var currentTopOffset = 850;
+
+	for (var c = 0; c<randomNum; c++) {
+		var randomAnim = randomAnimationTime();
+		var randDel = randomDelayTime()+cubeCounter*30;
+		if (c==randomNum-1) {
+			delayTime=delayTime+randDel;
+		}
+		$(cloneCube()).attr('title',randomAnim+" " +randDel).delay(delayTime).animate({top: currentTopOffset, left:randomOffset()}, randomAnim, "customBounceEase");
+		$('#sugar-container').css('transform','translateY('+cubeCounter*1.5+'px)')
+		$('#sugar-container').css('transition','all ' + delayTime*1.5 + 'ms');
+		$('#scale-top').css('transform','translateY('+cubeCounter*0.5+'px)');
+		$('#scale-top').css('transition','all ' + delayTime*2.5 + 'ms');
+		$('#scale-bar').css('transform','translateY(-'+cubeCounter*3.5+'px)');
+		$('#scale-bar').css('transition','all ' + delayTime + 'ms');
+		delayTime = delayTime + randDel;
+		currentTopOffset = currentTopOffset-37;
+	}
+
+
+			/*  $("#sugar-cube-1").animate({top:497+200, left:randomOffset()}, 850, "customBounceEase");
+			  if (randomNum>-2) {
+			    $("#sugar-cube-2").delay(150).animate({top:452+200, left:randomOffset()}, 1000, "customBounceEase");
+			  }
+			  if (randomNum>0) {
+			    $("#sugar-cube-3").delay(450).animate({top:406+200, left:randomOffset()}, 1000, "customBounceEase");
+			  }
+			  if (randomNum>2) {
+			    $("#sugar-cube-4").delay(1200).animate({top:362+200, left:randomOffset()}, 1000, "customBounceEase");
+			  }*/
+}
+
+
+jQuery.extend( jQuery.easing, {
+  easeOutBounceNew: function (x, t, b, c, d) {
+  
+        
+        if ((t/=d) < 1/3){  //t is time over distance, (the x parameter is also t/d)
+            return (9*x*x);
+        }else if (t < .75){ //the bounce is determined by a quadratic equation
+                            //can be changed to change the bounce height.
+            var thing = (-17.34*x*x)+(14.351*x)-2.944;
+            if (thing > 0){
+               return c*(1 - thing) + b;
+            }else{ return 1;}
+        }
+  }
+});
+$.extend($.easing, {
+    customBounceEase : makeBounceFunction(.3)
+});
+
+
+
+/* WIP Remove cubes w/ animation
+
+	var delayRemove = 50;
+
+	if (cubeCounter>1) {
+		for (var i = 1; i <= cubeCounter; i++) {
+			animateSugarCube(i, delayRemove);
+			delayRemove = delayRemove+50;
+		}
+		function removeSugarCube(i) {
+			setTimeout(function() {
+				$("#sugar-cube-"+i).remove();
+			},10)
+		}
+		function animateSugarCube(i, delayRemoveVar) {
+			setTimeout(function() {
+				$("#sugar-cube-"+i).addClass("animated bounceOutRight");
+				removeSugarCube(i);
+			},delayRemoveVar)
+		}
+		var oldCubeCount = cubeCounter;
+		cubeCounter = cubeCounter+1;
+	}
+
+	setTimeout(restOfFunction(), 50*oldCubeCount);
+
+	function restOfFunction() {
+		var randomNum = Math.floor(parseInt( $("#numCubes").val() , 10 )/2.7);
+		//console.log($("#numCubes").val() + "g of sugar is " + parseInt( $("#numCubes").val() , 10 )/2.7 + " sugar cubes")
+		var delayTime = 0;
+		var currentTopOffset = 800;
+
+		for (var c = 0; c<randomNum; c++) {
+			var randomAnim = randomAnimationTime();
+			var randDel = randomDelayTime();
+			if (c==randomNum-1) {
+				delayTime=delayTime+randDel;
+			}
+			$(cloneCube()).attr('title',randomAnim+" " +randDel).delay(delayTime).animate({top: currentTopOffset, left:randomOffset()}, randomAnim, "customBounceEase");
+			delayTime = delayTime + randDel;
+			currentTopOffset = currentTopOffset-45;
+		}
+
+	}
+*/
+
+
+/**  https://github.com/clark-pan/Bounce-Function/blob/master/bounce-function.js
+* Creates a bounce easing function to be used with animation.
+* @param {Number} timeBetweenBounces This parameter specifies how long it takes between when the object hits the 'ground' and bounces back up to its apex. It needs to be between 0 and 1, but keep in mind that as the number approaches 1, the number of bounces required to smoothly animate the object to a stop will increase, and thus the function will take longer to calculate. A value of .5 will return the same function that Robert Penner uses.
+* @param {Number} bounceBackThreshold The value at which the function will consider the object to be at rest. I.E. a value of .5 would mean that the object will be considered at rest if its last bounce put it at .5 of its total 'height'. The lower this number, the more times the easing function will bounce the object, even if its not visually distinguishable.
+* @returns An easing function that takes a value representing how far into the animation, and returns the easing value.
+* @type Function
+*/
+  function makeBounceFunction(timeBetweenBounces, bounceBackThreshold) {
+  "use strict";
+  var numberOfBounces, howFarUpItWillBounce, i, totalTime,
+    timeBreakPoints, timeHalfwayPoints, normalisingFactors, normalisingConstants, lastBreakPoint, timeHalf;
+  //Set to .5 if timeBetweenBounces is not specified or is greater than or equal to 1
+  //If timeBetweenBounces is greater than or equal to 1, then it would actually mean that the object is bouncing 'higher', and thus will never come to a rest.
+  if (timeBetweenBounces === undefined || typeof timeBetweenBounces !== "number" || timeBetweenBounces >= 1) {
+    timeBetweenBounces = 0.5;
+  } else if (timeBetweenBounces < 0) {
+    timeBetweenBounces = 0;
+  }
+
+  //Sets the default bounceBackThreshold
+  if (!bounceBackThreshold || typeof timeBetweenBounces !== "number") {
+    bounceBackThreshold = 0.01;
+  }
+  //Figuring out how many bounces are necessary for it to come to a stop
+  howFarUpItWillBounce = 1;
+  i = 0;
+  while (howFarUpItWillBounce > bounceBackThreshold) {
+    howFarUpItWillBounce = Math.pow(timeBetweenBounces, 2 * i);
+    i += 1;
+  }
+  numberOfBounces = i;
+
+  //Figuring out what the total portion of time is.
+  totalTime = 1;
+  for (i = 1; i <= numberOfBounces; i += 1) {
+    totalTime += Math.pow(timeBetweenBounces, i) * 2;
+  }
+
+  //Precalculating values needed in the easing function
+  timeBreakPoints = [1 / totalTime];
+  timeHalfwayPoints = [0];
+  normalisingFactors = [1 / ((1 / totalTime) * (1 / totalTime))];
+  normalisingConstants = [0];
+  lastBreakPoint = timeBreakPoints[0];
+  for (i = 1; i <= numberOfBounces; i += 1) {
+    lastBreakPoint += Math.pow(timeBetweenBounces, i) / totalTime * 2;
+    timeBreakPoints.push(lastBreakPoint);
+    timeHalf = (lastBreakPoint - timeBreakPoints[i - 1]) / 2;
+    timeHalfwayPoints.push(timeHalf + timeBreakPoints[i - 1]);
+    normalisingConstants.push(1 - Math.pow(timeBetweenBounces, 2 * i));
+    normalisingFactors.push((1 - normalisingConstants[i]) / (timeHalf * timeHalf));
+  }
+
+  //The easing function. x is a value between 0 and 1 representing how far into the animation it is.
+  return function (x) {
+    var i;
+    if (x === 1) {
+      return 1;
+    }
+    for (i = 0; i <= numberOfBounces; i += 1) {
+      if (x < timeBreakPoints[i]) {
+        return normalisingFactors[i] * (x -= timeHalfwayPoints[i]) * x + normalisingConstants[i];
+      }
+    }
+  };
+}
+</script>

@@ -1,0 +1,150 @@
+/*
+  Sugar-Cube Style Guide
+  By: Nabil Enayet 7/31/2015
+  http://anylytics.io/sugar-cube
+*/
+
+body {  
+  background: -webkit-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(45deg, #eeeeee 30%, #effcff 70%); /* FF3.6+ */
+  background:     -ms-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* IE10 */
+  background:      -o-linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* Opera 11.10+ */
+  background:         linear-gradient(45deg, #fdfdfe 30%, #effcff 70%); /* W3C */    
+  background-image:url('../img/tile.png');   
+}
+
+.hideThis {
+  display:none;
+}
+
+#scale {
+  position:fixed;
+  bottom:175px;
+  left:calc(50% - 140px);
+  z-index:3;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+#scale-bar {
+  //transition: all 0.8s;
+}
+
+#scale-bar:hover {
+}
+
+#scale-top:hover {
+}
+
+#loader {
+  display:none;
+  z-index:10;
+  position: fixed;
+  margin: 0px;
+}
+
+.sugar-cube {
+  display:inline-block;
+  position:absolute;
+  //content: url('../img/sugar_cube_flat.svg');
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+#floor {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:100px;
+  background-color:#e7e5d8;
+}
+
+#stove {
+  position:fixed;
+  content: url('../img/stove.svg');
+  bottom:0;
+  width:450px;
+  z-index:1;
+}
+
+#counter {
+  position:fixed;
+  bottom:100px;
+  width:100%;
+  height:75px;
+  background-color:#4e4e4f;
+}
+
+.hover-tilt{
+    transition: transform 0.4s;
+}
+
+.hover-tilt:hover {
+  transform: translate(20px) rotate(5deg);
+  transition: transform .4s;
+}
+
+.sugar-cube.logo {
+  margin: 35px;
+  width: 100px;
+}
+
+.sugar-cube.animated {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.logo-container div {
+  display:inline-block;
+}
+
+.input-title {
+  //position:absolute;
+  //width:600px;
+  //margin:35px;
+  text-align:center;
+ // margin:auto;
+  //left:0;
+  //right:0;
+  //top:600px;
+}
+
+.showOverflow {
+  overflow:visible;
+}
+
+.btn-floating.cardBtn {
+  float: right;
+  position: absolute;
+  right: -20px;
+  bottom: -25px;
+}
+
+#sugar-container {
+  width:100px; 
+  position:absolute;
+  margin:auto;
+  left: 0;
+  right: 0;
+  top: -260px;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.sugar-input {
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  font-size: 1.1em;
+}
