@@ -12,4 +12,4 @@ require.config({
 });
 
 
-require(["sugar"]);
+require(["sugar", "sugarAnim"]);

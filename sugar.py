@@ -22,7 +22,7 @@ def find_foodid(food_id):
 def find_foodsuggest(food_partial):
 	data = []
 	c = get_db().cursor()
-	for row in c.execute('SELECT Long_Desc, NDB_No FROM food_des WHERE Long_Desc LIKE ? LIMIT 10', ['%'+food_partial+'%']):
+	for row in c.execute('SELECT Long_Desc, NDB_No FROM food_des WHERE Long_Desc LIKE ? LIMIT 20', ['%'+food_partial+'%']):
 		data.append({"value":row[0],"data":row[1]})
 	return jsonify(	suggestions=data)
 
