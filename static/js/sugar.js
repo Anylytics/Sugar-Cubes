@@ -16,7 +16,7 @@ define([ 'ractive', 'rv!../ractive/sugar', 'jquery','autocomplete', 'sugarAnim']
 	      // Do ajax call or lookup locally, when done,
 	      // call the callback and pass your results:$("#loader").css('display','block');
 	      $.ajax({
-	            url: "../nutrients_suggest/"+query,
+	            url: "../../nutrients_suggest/"+query,
 	            dataType: "json",
 	            success: function(result) {
 	              $("#loader").css('display','none');
@@ -33,7 +33,7 @@ define([ 'ractive', 'rv!../ractive/sugar', 'jquery','autocomplete', 'sugarAnim']
 	function getSugar(food_id) {
 	  $("#loader").css('display','block');
 	  $.ajax( {
-	      url: "../nutrients_sugarcontent/"+food_id,
+	      url: "../../nutrients_sugarcontent/"+food_id,
 	      dataType: "json",
 	      success: function(result) {
 	        $("#loader").css('display','none');
