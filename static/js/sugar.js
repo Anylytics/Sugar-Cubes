@@ -20,7 +20,6 @@ define([ 'ractive', 'rv!../ractive/sugar', 'jquery','autocomplete', 'sugarAnim']
 	            dataType: "json",
 	            success: function(result) {
 	              $("#loader").css('display','none');
-	              console.log(result);
 	              done(result);
 	            }
 	        });
@@ -38,10 +37,17 @@ define([ 'ractive', 'rv!../ractive/sugar', 'jquery','autocomplete', 'sugarAnim']
 	      dataType: "json",
 	      success: function(result) {
 	        $("#loader").css('display','none');
-	        Materialize.toast("That has " + result + "g of sugar!", 6000);
-	        dropCubes(result);
+	        parseNutrients(result);
 	      }
 	  })
+	}
+
+	function parseNutrients(result) {
+		for (nutrients in result) {
+			console.log(result[nutrients]);
+		}
+		Materialize.toast("That has " + result + "g of sugar!", 6000);
+		dropCubes(result);
 	}
 
     return sugarRactive;

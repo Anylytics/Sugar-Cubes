@@ -1,0 +1,84 @@
+/*
+  Sugar-Cube Style Guide
+  By: Nabil Enayet 7/31/2015
+  http://anylytics.io/sugar-cube
+*/
+
+.hideThis {
+	display:none;
+}
+
+body {
+	overflow:scroll;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+#loader {
+	display:none;
+	z-index:10;
+	position: fixed;
+	margin: 0px;
+}
+
+.card.checkbox-card {
+	padding:10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin:10px;
+    opacity:0.3	;
+	transition:all 0.4s;
+}
+
+.card.checkbox-card.activeCard {
+	opacity:1;
+	transition:all 0.4s;
+}
+
+.card.checkbox-card > label {
+	width:100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.switch > label {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.switch {
+	text-align:center;
+}
+
+.switch label .lever:after {
+	background-color: #FF6B6B;
+}
+
+.switch label .lever {
+	background-color: #993333;
+}
+
+.switch input[type=checkbox][disabled]+.lever {
+	background-color:gainsboro;
+}
+
+.info-icon {
+	position: absolute;
+	top:0;right:0;
+}
+
+.headerBox {
+	padding:30px!important;
+}
+
+.headerBox, .headerBox > input {
+	font-size:1.5em;
+	text-align:center;
+}

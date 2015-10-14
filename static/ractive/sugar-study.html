@@ -1,0 +1,47 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col s6 headerBox">
+			<input placeholder="Search for a food" id="foodID" type="text">
+		</div>
+		<div class="col s6 headerBox">
+			{{foodIndex}}
+			<a class="btn-floating btn waves-effect waves-light teal"><i class="material-icons">add</i></a>
+		</div>
+	</div>
+
+	<div class="row">
+		{{#each addedFoods}}
+			<div class="col s6 m2">
+				<div class="card checkbox-card">
+					{{this.name}}:{{this.index}}
+				</div>
+			</div>
+		{{/each}}
+	</div>
+
+	<form action="#">
+		<div class="row">
+			{{#each nutrients}}
+				<div class="col s6 m2">
+					<div class="card checkbox-card {{checked ? 'activeCard':''}}" title="{{this.nutrient}} ({{this.tagname}})">
+						<input type="checkbox" id="{{this.key}}" checked="{{this.checked}}" />
+						<label for="{{this.key}}">{{this.nutrient}}</label>
+						<i class="tiny material-icons info-icon"  onclick="Materialize.toast('{{tagname}} // {{key}} // {{unit}}', 4000)">info</i>
+						
+						<div class="switch" title="Set whether this nutrient is good or bad for you">
+							<label>
+								<i class="tiny material-icons">thumb_down</i>
+							<input {{checked? '':'disabled'}} type="checkbox" checked="{{this.good}}">
+							<span class="lever"></span>
+								<i class="tiny material-icons">thumb_up</i>
+							</label>
+						</div>
+						<input placeholder="Daily Value" style="width:80%; text-align:center;" value="{{this.dv}}" type="number" class="validate">{{this.unit}}
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</form>
+
+</div>

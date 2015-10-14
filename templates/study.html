@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="./static/css/anylytics.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/animate.css"/>
-    <link rel="stylesheet" href="./static/css/sugar.css"/>
+    <link rel="stylesheet" href="./static/css/sugar-study.css"/>
     <link rel="icon" type="image/x-icon" href="./static/img/sugar_ico.png">
 
 </head>
 <body>
     <script type="text/javascript" src="./static/js/lib/jquery-1.11.js"></script>
     <script type="text/javascript" src="./static/js/lib/materialize.min.js"></script>
-    <div id='sugar-div'></div>
-
-    
-    <div class="hide-on-small-only"id='stove'></div>
-    <div id='counter'></div>
-    <div id='floor'></div>
+	<div class="progress" id="loader">
+		<div class="indeterminate"></div>
+	</div>
+    <div class="container">
+        <h1>Nutrient Study Tool</h1>
+    </div>
+    <div id='sugar-study-div'></div>
 
      <!-- RequireJS means we use this plugin to load everything else! -->
      <!-- See main.js -->
